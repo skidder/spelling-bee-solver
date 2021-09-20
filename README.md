@@ -1,13 +1,20 @@
 ## Spelling Bee Solver
-Simple program to help me solve the NY Times Spelling Bee puzzle because we all need a little help some times.
+Simple program to help me solve the NY Times Spelling Bee puzzle because we all need a little help some times. Uses a word list from [https://github.com/dwyl/english-words](https://github.com/dwyl/english-words).
+
+### Installing
+```
+go get github.com/skidder/spelling-bee-solver
+```
+
+Then download a world file, either from this repo (`words.txt`), from [https://github.com/dwyl/english-words](https://github.com/dwyl/english-words), or your own.
 
 ### Running
 
 ```
-go run main.go -availableLetters dineupz -requiredLetter u
+spelling-bee-solver -availableLetters dineupz -requiredLetter u
 ```
 
-### Usage Flags
+### Flags
 ```
   -availableLetters string
         Letters that can be used
